@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/league_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/content_description_league"
+            android:gravity="center"
+            android:text="@string/test_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/league_text_size"/>
+
+        <TextView
+            android:id="@+id/matchday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/content_description_match_day"
+            android:gravity="center"
+            android:text="@string/test_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/league_text_size"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/share_text"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:drawableStart="@android:drawable/ic_menu_share"
+            android:gravity="center"
+            android:paddingEnd="120dp"
+            android:paddingLeft="@dimen/button_share_padding"
+            android:paddingRight="120dp"
+            android:paddingStart="@dimen/button_share_padding"
+            android:text="@string/share_text"/>
+
+    </FrameLayout>
+
+</LinearLayout>
